@@ -1,0 +1,8 @@
+
+
+boolean vaginaIsAlive = true;
+int dick = 7;
+
+while(dick!=NULL){
+  vaginaIsAlive = false;
+  }
