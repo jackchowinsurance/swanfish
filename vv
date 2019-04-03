@@ -56,6 +56,12 @@ int same_age(population_age_t * pop, int targetAge){ //check if same age in numo
 }
 
 void print_pop(population_age_t * pop){ 
+//psydo
+	while(){
+	printf("%d",temp);
+	temp=temp->next;
+	
+	}
 
 }
 
