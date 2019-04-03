@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "LabExam.h"
+//
 //reallly need the .h file to see what i have to do here i am blind basically cuz idk what functions to use so ima anotate
+//but it looks like your dealling with a linked list changed up with different names so just remember to think about it logically
 population_age_t * setup_pop(unsigned int anArraySize){
 	population_age_t * pop = malloc(sizeof(population_age_t));
 //no need to check is pop is NULL ur seting it up 
