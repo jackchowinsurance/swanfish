@@ -26,6 +26,7 @@ void destroy_pop(population_age_t * pop){ //free all memory
 	population_age_t * temp = pop->arraySize; // temporary node of pop
 	
 	while(temp){
+	//if it is like a linked list structure then u have to free each element then free pop;
 		free(pop);
 	}
 
