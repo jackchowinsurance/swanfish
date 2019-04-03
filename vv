@@ -1,0 +1,65 @@
+//c file
+#include <stdio.h>
+#include <stdlib.h>
+#include "LabExam.h"
+
+population_age_t * setup_pop(unsigned int anArraySize){
+	population_age_t * pop = malloc(sizeof(population_age_t));
+
+	if(pop!=NULL){
+		pop->ages = malloc(sizeof(int)*anArraySize);
+		if(pop->ages!=NULL){
+			pop->arraySize = anArraySize;
+			pop->numOfAges = 0;
+		}
+		else{
+			free(pop);
+			pop = NULL;
+		}
+	}
+
+	return pop;
+}
+
+void destroy_pop(population_age_t * pop){ //free all memory
+	population_age_t * temp = pop->arraySize; // temporary node of pop
+	
+	while(temp){
+		free(pop);
+	}
+
+
+	//
+}
+
+int insert_age(population_age_t * pop, int anAge){
+	//appending 
+
+	population_age_t * temp = malloc(sizeof(population_age_t)); //new node
+	temp->age = anAge;
+	if(pop->anArraySize == NULL){
+		pop->anArraySize = temp;
+	}
+	else{
+		return 0;
+	}
+
+}
+
+int same_age(population_age_t * pop, int targetAge){ //check if same age in numof ages
+	population_age_t * temp = pop->numOfAges
+
+	int len = pop->numOfAges;
+
+
+}
+
+void print_pop(population_age_t * pop){ 
+
+}
+
+// int main(void){
+// 	population_age_t * pop1 = setup_pop(7);
+// 	//
+// 	return 0;
+// }
