@@ -64,3 +64,5 @@ void print_pop(population_age_t * pop){
 // 	return 0;
 // }
 where you given anything else?
+what is the node called cuz u are mixing up the list with the node
+
