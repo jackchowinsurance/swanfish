@@ -1,0 +1,8 @@
+boolean KOdrops=true;
+kaitlyn=true;
+boolean anal;
+
+if(KOdrops==true&&kaitlyn==true){
+  anal=true;
+}
+return anal;
