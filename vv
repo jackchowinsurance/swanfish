@@ -2,20 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "LabExam.h"
-
+//reallly need the .h file to see what i have to do here i am blind basically cuz idk what functions to use so ima anotate
 population_age_t * setup_pop(unsigned int anArraySize){
 	population_age_t * pop = malloc(sizeof(population_age_t));
-
+//no need to check is pop is NULL ur seting it up 
 	if(pop!=NULL){
 		pop->ages = malloc(sizeof(int)*anArraySize);
+		//same thing here 
 		if(pop->ages!=NULL){
 			pop->arraySize = anArraySize;
 			pop->numOfAges = 0;
+			
 		}
-		else{
-			free(pop);
-			pop = NULL;
-		}
+		//dont free pop because ur setting it up 
 	}
 
 	return pop;
@@ -34,7 +33,7 @@ void destroy_pop(population_age_t * pop){ //free all memory
 
 int insert_age(population_age_t * pop, int anAge){
 	//appending 
-
+	//is this really the name of the new node? because it looks lik the name of a population age list idk cuz i dont have .h
 	population_age_t * temp = malloc(sizeof(population_age_t)); //new node
 	temp->age = anAge;
 	if(pop->anArraySize == NULL){
